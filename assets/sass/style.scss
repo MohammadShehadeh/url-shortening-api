@@ -1,0 +1,540 @@
+header {
+	display: flex;
+	padding-top: 28px;
+	.main-menu {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.logo {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		a {
+			display: flex;
+		}
+
+		i {
+			display: none;
+			font-size: 32px;
+		}
+	}
+
+	.menu {
+		align-items: center;
+		display: flex;
+		margin-left: 20px;
+		li {
+			margin: 0 15px;
+		}
+	}
+
+	.form {
+		align-items: center;
+		display: flex;
+		button {
+			border-radius: 30px;
+			margin: 0 10px;
+			padding: 15px 20px;
+		}
+
+		.login-btn {
+			background-color: transparent;
+			color: $gray;
+		}
+
+		.signup-btn {
+			color: $white;
+		}
+	}
+}
+
+.hero-section  {
+	background-image: url('../images/illustration-working.svg');
+	background-position: right;
+	background-repeat: no-repeat;
+	.fs-content {
+		padding-bottom: 100px;
+		padding-top: 100px;
+	}
+
+	h1 {
+		color: $veryDarkViolet;
+		font: 72px/1.25 "Poppins Bold";
+		max-width: 550px;
+	}
+
+	p {
+		color: $gray;
+		font-size: 24px;
+		font: 20px/1.25 "Poppins Medium";
+		margin-bottom: 20px;
+		max-width: 550px;
+	}
+
+	button {
+		border-radius: 30px;
+		color: $white;
+		padding: 20px 40px;
+	}
+}
+
+.body-form {
+	form {
+		background-color: $darkViolet;
+		background-image: url('../images/bg-shorten-desktop.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 10px;
+		margin: 0 auto;
+		padding: 50px 0;
+		text-align: center;
+	}
+
+	.form-background {
+		background: linear-gradient(to top, #eff1f7 103px, white 103px);
+		padding-bottom: 20px;
+	}
+
+	.form-background-1 {
+		background-color: $lightGray;
+		padding: 20px 0;
+	}
+
+	.api-form {
+		display: flex;
+		justify-content: center;
+		.input-col {
+			width: 75%;
+		}
+
+		.button-col {
+			width: 15%;
+		}
+	}
+
+	input {
+		box-sizing: border-box;
+		font: 18px/1.25 "Poppins Medium";
+		padding: 15px;
+		width: 100%;
+		&.warning {
+			border: 2px solid $red;
+			color: $red;
+			outline: $red;
+			&::-webkit-input-placeholder { /* Edge */
+				color: $red;
+			}
+
+			&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				color: $red;
+			}
+
+			&::placeholder {
+				color: $red;
+			}
+		}
+	}
+
+	.text-warning {
+		color: $red;
+		display: none;
+		margin: 0;
+		min-height: 27px;
+		text-align: left;
+		width: 80%;
+		&.show {
+			display: block;
+		}
+	}
+
+	button {
+		border-radius: 10px;
+		color: $white;
+		font: 18px/1.25 "Poppins Medium";
+		padding: 15px;
+		width: 150px;
+	}
+
+	.show-result {
+		background-color: $white;
+		border-radius: 10px;
+		color: $gray;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		padding: 20px 15px;
+	}
+
+	.api-field {
+		display: flex;
+		input {
+			color: $gray;
+			font: 18px/1.25 "Poppins Medium";
+			margin-right: 25px;
+		}
+
+		.copied {
+			background-color: $darkViolet;
+		}
+	}
+}
+
+.main-content {
+	background-color: $lightGray;
+	padding: 100px 0;
+	.title {
+		padding: 60px 0;
+		text-align: center;
+		h1 {
+			color: $veryDarkViolet;
+			font: 28px/1.25 "Poppins Bold";
+		}
+
+		p {
+			color: $gray;
+			font: 18px/1.25 "Poppins Medium";
+			margin: 20px auto;
+			max-width: 475px;
+		}
+	}
+
+	.main-box {
+		display: flex;
+		justify-content: space-between;
+		.separator {
+			background-color: $blue;
+			height: 12px;
+			margin: auto 0;
+			max-width: 65px;
+			width: 100%;
+		}
+	}
+
+	.box {
+		background-color: $white;
+		border-radius: 10px;
+		max-width: 385px;
+		padding: 25px;
+		position: relative;
+		h3 {
+			color: $veryDarkViolet;
+			font-size: 24px;
+			font: 18px/1.25 "Poppins Bold";
+		}
+
+		p {
+			color: $gray;
+			font: 20px/1.25 "Poppins Medium";
+		}
+	}
+
+	.box-1 {
+		margin-bottom: 50px;
+	}
+
+	.box-2 {
+		margin-bottom: 30px;
+		margin-top: 25px;
+	}
+
+	.box-3 {
+		margin-top: 50px;
+	}
+
+	.icon-brand {
+		align-items: center;
+		background-color: $darkViolet;
+		border-radius: 50%;
+		display: flex;
+		height: 75px;
+		justify-content: center;
+		position: absolute;
+		top: -42px;
+		width: 75px;
+	}
+}
+
+.widget {
+	background-color: $darkViolet;
+	background-image: url('../images/bg-boost-desktop.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 0;
+	.headline {
+		color: $white;
+		font: 18px/1.25 "Poppins Bold";
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.widget-btn {
+		text-align: center;
+		button {
+			border-radius: 30px;
+			color: $white;
+			font-size: 18px;
+			padding: 18px 30px;
+			width: 200px;
+		}
+	}
+}
+
+footer {
+	background-color: $veryDarkViolet;
+	padding: 75px 0;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.footer-menu {
+		color: $gray;
+		display: flex;
+		font-family: "Poppins Medium";
+		li {
+			cursor: pointer;
+			display: block;
+			padding: 10px 0;
+		}
+
+		ul {
+			margin: 0 40px;
+		}
+		.main-item {
+			color: $white;
+			font-family: "Poppins Bold";
+			padding-bottom: 15px;
+		}
+	}
+
+	.social-icon a {
+		padding: 0 15px;
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+	header {
+		flex-direction: column;
+		padding-top: 28px;
+		position: relative;
+		.main-menu {
+			background-color: $darkViolet;
+			border-radius: 15px;
+			display: none;
+			flex-direction: column;
+			height: 50vh;
+			justify-content: center;
+			padding: 45px 0;
+			position: absolute;
+			right: 5%;
+			top: 91px;
+			width: 90%;
+			&.show {
+				display: flex;
+			}
+
+			a {
+				color: $white;
+			}
+
+			.menu {
+				border-bottom: 1px solid $gray;
+				margin: 0 15px;
+			}
+		}
+
+		.logo {
+			margin-bottom: 20px;
+			padding-top: 10px;
+			i {
+				display: block;
+			}
+		}
+
+		.menu {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			margin-left: 0;
+			ul {
+				text-align: center;
+			}
+
+			li {
+				display: block;
+				margin: 20px 15px;
+			}
+		}
+
+		.form {
+			align-items: center;
+			flex-direction: column;
+			button {
+				margin: 10px 10px;
+				padding: 15px 20px;
+				width: 80%;
+			}
+
+			.login-btn {
+				color: $white;
+			}
+		}
+	}
+
+	.body-form {
+		.api-form {
+			align-items: center;
+			flex-direction: column;
+			.input-col {
+				width: 90%;
+			}
+
+			.button-col {
+				margin-top: 10px;
+				width: 90%;
+			}
+		}
+
+		.api-field input {
+			text-align: center;
+		}
+
+		button {
+			width: 100%;
+		}
+	}
+
+	.hero-section {
+		background-position: top;
+		.fs-content {
+			padding-top: 500px;
+		}
+	}
+
+	.footer-container {
+		align-items: center;
+		flex-direction: column;
+		.footer-logo {
+			margin-bottom: 20px;
+		}
+
+		.footer-menu {
+			margin-bottom: 20px;
+			ul {
+				margin-left:0;
+				margin-right: 40px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.hero-section {
+		.fs-content {
+			padding-bottom: 50px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 48px;
+			max-width: 100%;
+		}
+
+		p {
+			max-width: 100%;
+		}
+	}
+
+
+	.body-form {
+		form {
+			padding: 25px 25px;
+		}
+
+		input {
+			box-sizing: border-box;
+			font: 18px/1.25 "Poppins Medium";
+			margin-bottom: 15px;
+			padding: 15px;
+			width: 100%;
+		}
+
+		button {
+			border-radius: 10px;
+			color: $white;
+			font: 18px/1.25 "Poppins Medium";
+			padding: 15px;
+			width: 100%;
+		}
+
+		.show-result {
+			align-items: center;
+			flex-direction: column;
+			font-size: 14px;
+			justify-content: center;
+			.api-field {
+				align-items: center;
+				flex-direction: column;
+				input {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.main-content {
+		padding-top: 50px;
+		.main-box {
+			align-items: center;
+			flex-direction: column;
+			.separator {
+				margin: 0 auto;
+				width: 18px;
+				height: 100%;
+			}
+		}
+
+		.box-1 {
+			margin-bottom: 0;
+		}
+
+		.box-2 {
+			margin-top: 40px;
+			margin-bottom: 0;
+		}
+
+		.box-3 {
+			margin-top: 40px;
+		}
+
+		.icon-brand {
+			right: calc(50% - 37px);
+			&.last {
+				right: 39%;
+			}
+		}
+	}
+	.footer-container {
+		.footer-logo {
+			text-align: center;
+		}
+
+		.footer-menu {
+			flex-direction: column;
+			ul {
+				margin: 0;
+				text-align: center;
+			}
+		}
+	}
+
+	.social-icon {
+		text-align: center;
+	}
+}

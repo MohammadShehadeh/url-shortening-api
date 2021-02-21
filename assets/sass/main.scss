@@ -1,0 +1,79 @@
+/** Fonts**/
+@font-face {
+	font-family: "Poppins Bold";
+	src: url("../fonts/Poppins/Poppins-Bold.ttf");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Poppins Medium";
+	src: url("../fonts/Poppins/Poppins-Medium.ttf");
+	font-display: swap;
+}
+/** Colors **/
+$white: #fff;
+$gray: #868080;
+$grayishViolet: #312159;
+$darkBlue: #35323E;
+$veryDarkViolet: #232127;
+$darkViolet: #3B3054;
+$red: #F46262;
+$blue: #2ACFCF;
+$lightBlue: #a2e8e8;
+$lightGray: #eff1f7;
+
+/* General */
+body {
+	font-size: 18px;
+	margin: 0;
+	font-family: "Poppins Medium";
+	box-sizing: border-box;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $gray;
+	font-family: "Poppins Bold";
+}
+
+h1 {
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+button {
+	background: none;
+    padding: 0;
+	margin: 0;
+	font-size: 18px;
+    outline: none;
+	border: none;
+	font-family: "Poppins Bold";
+	cursor: pointer;
+	background-color: $blue;
+	&:hover {
+		background-color: $lightBlue;
+	}
+}
+
+input {
+	border: none;
+	outline: none;
+	border-radius: 10px;
+}
+
+.fs-content {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
