@@ -60,6 +60,7 @@ button {
 	font-family: "Poppins Bold";
 	cursor: pointer;
 	background-color: $blue;
+
 	&:hover {
 		background-color: $lightBlue;
 	}
@@ -71,7 +72,7 @@ input {
 	border-radius: 10px;
 }
 
-.fs-content {
+.shortly-content {
 	margin: 0 auto;
 	max-width: 1440px;
 	padding-left: 15px;

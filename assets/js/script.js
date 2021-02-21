@@ -1,50 +1,51 @@
-window.addEventListener('load', function(event) {
+let elem = 0;
 
-	/*
-	* Toggle Navbar/header on click
-	*/
-	var toggle = document.querySelector('.fa-bars');
-	var header = document.querySelector('.main-menu');
+fetchShortenUrl = () => {
+	const url = document.getElementById('form-input');
+	const inputText = document.querySelector('.api-result');
+	const warningText = document.querySelector('.text-warning');
 
+	elem += 1
+	if (url.value) {
+		fetch(`https://api.shrtco.de/v2/shorten?url=${url.value}`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+		}).then(response => response.json())
+			.then(data => inputText.innerHTML +=
+				`<div class="show-result">
+					<div class="url-field">
+						<p>${url.value}</p>
+					</div>
+					<div class="api-field">
+						<input type="text" value="${data.result.short_link}" class="myInput-${ elem }">
+						<button onclick="myFunction(${ elem })" class="myButton-${ elem }">Copy</button>
+					</div>
+				</div>`
+			);
+
+		url.classList.remove('warning');
+		warningText.classList.remove('show');
+	} else {
+		url.classList.add('warning');
+		warningText.classList.add('show');
+	}
+}
+
+window.addEventListener('load', () => {
+	const form = document.querySelector('.api-form');
+	const toggle = document.querySelector('.toggle');
+	const header = document.querySelector('.main-menu');
+
+	// Toggle Navbar/header on click
 	toggle.addEventListener("click", function() {
 		header.classList.toggle('show');
 	});
 
-	/*
-	* Fetch API data
-	*/
-	var url = document.getElementById('form-input');
-	var form = document.querySelector('.api-form');
-	var inputText = document.querySelector('.api-result');
-	var warningText = document.querySelector('.text-warning');
-
-	var elem = 0;
-	form.addEventListener('submit', function(event) {
-		event.preventDefault();
-		elem += 1
-		if (url.value) {
-			fetch(`https://cu8.in/api/?action=short&urls=|${url.value}|`)
-			.then(response => response.json())
-				.then(data => inputText.innerHTML +=
-					`<div class="show-result">
-						<div class="url-field">
-							<p>${url.value}</p>
-						</div>
-						<div class="api-field">
-							<input type="text" value="${data.data.shortUrl['secure']}" class="myInput-${ elem }">
-							<button onclick="myFunction(${ elem })" class="myButton-${ elem }">Copy</button>
-						</div>
-					</div>`
-				);
-
-			url.classList.remove('warning');
-			warningText.classList.remove('show');
-		} else {
-			url.classList.add('warning');
-			warningText.classList.add('show');
-		}
-
+	// Fetch API data
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		fetchShortenUrl();
 	});
-
-
 });

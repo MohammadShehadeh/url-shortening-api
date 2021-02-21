@@ -54,7 +54,7 @@ header {
 	background-image: url('../images/illustration-working.svg');
 	background-position: right;
 	background-repeat: no-repeat;
-	.fs-content {
+	.shortly-content {
 		padding-bottom: 100px;
 		padding-top: 100px;
 	}
@@ -317,12 +317,12 @@ footer {
 	}
 }
 
-
 @media only screen and (max-width: 991px) {
 	header {
 		flex-direction: column;
 		padding-top: 28px;
 		position: relative;
+
 		.main-menu {
 			background-color: $darkViolet;
 			border-radius: 15px;
@@ -335,6 +335,7 @@ footer {
 			right: 5%;
 			top: 91px;
 			width: 90%;
+
 			&.show {
 				display: flex;
 			}
@@ -352,7 +353,8 @@ footer {
 		.logo {
 			margin-bottom: 20px;
 			padding-top: 10px;
-			i {
+
+			svg {
 				display: block;
 			}
 		}
@@ -412,7 +414,8 @@ footer {
 
 	.hero-section {
 		background-position: top;
-		.fs-content {
+
+		.shortly-content {
 			padding-top: 500px;
 		}
 	}
@@ -420,12 +423,14 @@ footer {
 	.footer-container {
 		align-items: center;
 		flex-direction: column;
+
 		.footer-logo {
 			margin-bottom: 20px;
 		}
 
 		.footer-menu {
 			margin-bottom: 20px;
+
 			ul {
 				margin-left:0;
 				margin-right: 40px;
@@ -436,7 +441,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
 	.hero-section {
-		.fs-content {
+		.shortly-content {
 			padding-bottom: 50px;
 			text-align: center;
 		}
@@ -478,9 +483,11 @@ footer {
 			flex-direction: column;
 			font-size: 14px;
 			justify-content: center;
+
 			.api-field {
 				align-items: center;
 				flex-direction: column;
+
 				input {
 					margin-right: 0;
 				}
@@ -490,9 +497,11 @@ footer {
 
 	.main-content {
 		padding-top: 50px;
+
 		.main-box {
 			align-items: center;
 			flex-direction: column;
+
 			.separator {
 				margin: 0 auto;
 				width: 18px;
@@ -515,11 +524,13 @@ footer {
 
 		.icon-brand {
 			right: calc(50% - 37px);
+
 			&.last {
 				right: 39%;
 			}
 		}
 	}
+
 	.footer-container {
 		.footer-logo {
 			text-align: center;
@@ -527,6 +538,7 @@ footer {
 
 		.footer-menu {
 			flex-direction: column;
+
 			ul {
 				margin: 0;
 				text-align: center;
