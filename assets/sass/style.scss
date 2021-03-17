@@ -1,6 +1,7 @@
 header {
 	display: flex;
 	padding-top: 28px;
+
 	.main-menu {
 		display: flex;
 		justify-content: space-between;
@@ -54,6 +55,7 @@ header {
 	background-image: url('../images/illustration-working.svg');
 	background-position: right;
 	background-repeat: no-repeat;
+
 	.shortly-content {
 		padding-bottom: 100px;
 		padding-top: 100px;
@@ -106,6 +108,7 @@ header {
 	.api-form {
 		display: flex;
 		justify-content: center;
+
 		.input-col {
 			width: 75%;
 		}
@@ -120,10 +123,12 @@ header {
 		font: 18px/1.25 "Poppins Medium";
 		padding: 15px;
 		width: 100%;
+
 		&.warning {
 			border: 2px solid $red;
 			color: $red;
 			outline: $red;
+
 			&::-webkit-input-placeholder { /* Edge */
 				color: $red;
 			}
@@ -145,6 +150,7 @@ header {
 		min-height: 27px;
 		text-align: left;
 		width: 80%;
+
 		&.show {
 			display: block;
 		}
@@ -170,6 +176,7 @@ header {
 
 	.api-field {
 		display: flex;
+
 		input {
 			color: $gray;
 			font: 18px/1.25 "Poppins Medium";
@@ -185,6 +192,7 @@ header {
 .main-content {
 	background-color: $lightGray;
 	padding: 100px 0;
+
 	.title {
 		padding: 60px 0;
 		text-align: center;
@@ -204,6 +212,7 @@ header {
 	.main-box {
 		display: flex;
 		justify-content: space-between;
+
 		.separator {
 			background-color: $blue;
 			height: 12px;
@@ -219,6 +228,7 @@ header {
 		max-width: 385px;
 		padding: 25px;
 		position: relative;
+
 		h3 {
 			color: $veryDarkViolet;
 			font-size: 24px;
@@ -264,6 +274,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 50px 0;
+
 	.headline {
 		color: $white;
 		font: 18px/1.25 "Poppins Bold";
@@ -273,6 +284,7 @@ header {
 
 	.widget-btn {
 		text-align: center;
+
 		button {
 			border-radius: 30px;
 			color: $white;
@@ -292,10 +304,12 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
 	.footer-menu {
 		color: $gray;
 		display: flex;
 		font-family: "Poppins Medium";
+
 		li {
 			cursor: pointer;
 			display: block;
@@ -548,5 +562,10 @@ footer {
 
 	.social-icon {
 		text-align: center;
+	}
+
+	.time {
+		text-align: center;
+		color: white;
 	}
 }
