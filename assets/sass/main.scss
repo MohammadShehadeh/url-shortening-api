@@ -1,32 +1,12 @@
-/** Fonts**/
-@font-face {
-	font-family: "Poppins Bold";
-	src: url("../fonts/Poppins/Poppins-Bold.ttf");
-	font-display: swap;
-}
+@import 'fonts';
+@import 'colors';
 
-@font-face {
-	font-family: "Poppins Medium";
-	src: url("../fonts/Poppins/Poppins-Medium.ttf");
-	font-display: swap;
-}
-/** Colors **/
-$white: #fff;
-$gray: #868080;
-$grayishViolet: #312159;
-$darkBlue: #35323E;
-$veryDarkViolet: #232127;
-$darkViolet: #3B3054;
-$red: #F46262;
-$blue: #2ACFCF;
-$lightBlue: #a2e8e8;
-$lightGray: #eff1f7;
 
-/* General */
+
 body {
 	font-size: 18px;
 	margin: 0;
-	font-family: "Poppins Medium";
+	font-family: "Poppins Medium", Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 }
 
