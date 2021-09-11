@@ -1,3 +1,9 @@
+@import 'main.scss';
+
+@mixin font-family {
+	font: 18px/1.25 "Poppins Medium";
+}
+
 header {
 	display: flex;
 	padding-top: 28px;
@@ -12,6 +18,7 @@ header {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
+
 		a {
 			display: flex;
 		}
@@ -26,6 +33,7 @@ header {
 		align-items: center;
 		display: flex;
 		margin-left: 20px;
+
 		li {
 			margin: 0 15px;
 		}
@@ -34,6 +42,7 @@ header {
 	.form {
 		align-items: center;
 		display: flex;
+
 		button {
 			border-radius: 30px;
 			margin: 0 10px;
@@ -119,8 +128,8 @@ header {
 	}
 
 	input {
+		@include font-family;
 		box-sizing: border-box;
-		font: 18px/1.25 "Poppins Medium";
 		padding: 15px;
 		width: 100%;
 
@@ -157,9 +166,9 @@ header {
 	}
 
 	button {
+		@include font-family;
 		border-radius: 10px;
 		color: $white;
-		font: 18px/1.25 "Poppins Medium";
 		padding: 15px;
 		width: 150px;
 	}
@@ -178,8 +187,8 @@ header {
 		display: flex;
 
 		input {
+			@include font-family;
 			color: $gray;
-			font: 18px/1.25 "Poppins Medium";
 			margin-right: 25px;
 		}
 
@@ -203,7 +212,7 @@ header {
 
 		p {
 			color: $gray;
-			font: 18px/1.25 "Poppins Medium";
+			@include font-family;
 			margin: 20px auto;
 			max-width: 475px;
 		}
@@ -478,7 +487,7 @@ footer {
 
 		input {
 			box-sizing: border-box;
-			font: 18px/1.25 "Poppins Medium";
+			@include font-family;
 			margin-bottom: 15px;
 			padding: 15px;
 			width: 100%;
@@ -487,7 +496,7 @@ footer {
 		button {
 			border-radius: 10px;
 			color: $white;
-			font: 18px/1.25 "Poppins Medium";
+			@include font-family;
 			padding: 15px;
 			width: 100%;
 		}
@@ -554,8 +563,8 @@ footer {
 			flex-direction: column;
 
 			ul {
+				@extend .footer-logo;
 				margin: 0;
-				text-align: center;
 			}
 		}
 	}
@@ -566,6 +575,6 @@ footer {
 
 	.time {
 		text-align: center;
-		color: white;
+		color: $white;
 	}
 }
