@@ -48,7 +48,6 @@ window.addEventListener("load", () => {
 	const form = document.querySelector(".api-form");
 	const toggle = document.querySelector(".toggle");
 	const header = document.querySelector(".main-menu");
-	const timeElem = document.querySelector(".time");
 
 	// Toggle Navbar/header on click
 	toggle.addEventListener("click", function () {
@@ -60,9 +59,4 @@ window.addEventListener("load", () => {
 		e.preventDefault();
 		fetchShortenUrl();
 	});
-
-	setInterval(() => {
-		const date = new Date();
-		timeElem.innerText = date.toLocaleTimeString();
-	}, 1000);
 });
